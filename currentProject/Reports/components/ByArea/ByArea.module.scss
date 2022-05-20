@@ -1,0 +1,27 @@
+.indent {
+    text-indent: 2ch;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding-top: 12px;
+    overflow: auto;
+}
+
+.search-row {
+    width: 100%;
+    padding-bottom: 15px;
+    background-color: #fff;
+
+    .search {
+        width: 400px;
+    }
+}
+
+.content {
+    flex: 2;
+    padding: 0 0 0 12px;
+    overflow: auto;
+}

@@ -1,0 +1,31 @@
+@import '@/styles/mixins';
+@import "@/styles/variables";
+
+.button-google-sheet {
+    display: inline-flex;
+    align-items: center;
+
+    @include button-reset($autoHeight: false);
+
+    svg {
+        width: 16px;
+        height: 21px;
+    }
+}
+
+.space {
+    gap: 20px !important;
+    width: 100%;
+
+    :global {
+        .ant-space-item:last-child {
+            margin-left: auto;
+        }
+
+        .ant-typography {
+            font-size: 14px;
+        }
+    }
+}
+
+@include dropdown-menu;

@@ -1,0 +1,58 @@
+@import "@/styles/mixins";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    overflow: auto;
+
+    .space {
+        flex-grow: 1;
+        justify-content: center;
+    }
+}
+
+.table-head {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    :global {
+        .ant-table-thead {
+            th {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.hidden-body {
+    :global {
+        .ant-table-tbody {
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+
+            > tr.ant-table-placeholder {
+                display: none;
+            }
+        }
+    }
+}
+
+.right-border {
+    border-right: 1px solid#f0f0f0;
+}
+
+.table-title {
+    font-size: 16px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center !important;
+}

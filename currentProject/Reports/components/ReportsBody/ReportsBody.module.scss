@@ -1,0 +1,38 @@
+.spin {
+    max-height: none !important;
+}
+
+.wrapper {
+    display: flex;
+    flex: auto;
+    overflow: auto;
+
+    :global {
+        .ant-spin-container {
+            display: flex;
+            flex: auto;
+            justify-content: space-between;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 12px;
+
+    table.excelDefaults {
+        table-layout: auto;
+    }
+}
+
+.photos {
+    :global {
+        a > img {
+            transition: 0.2s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

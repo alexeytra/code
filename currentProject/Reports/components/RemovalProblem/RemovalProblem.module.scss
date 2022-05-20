@@ -1,0 +1,32 @@
+@import '@/styles/mixins';
+
+.container {
+    @include table-head($font-weight: 500);
+    @include table-body();
+    @include table-footer;
+    @include table-summary;
+
+    :global {
+        .ant-typography {
+            margin-bottom: 0;
+        }
+    }
+
+    .select-region {
+        min-width: 200px;
+
+        :global {
+            .ant-select-selection-overflow {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
+
+.space {
+    width: 100%;
+
+    .ant-space-item:last-child :global {
+        margin-left: auto;
+    }
+}
